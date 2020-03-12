@@ -59,3 +59,10 @@ Route::get('v1/category/ads/{cat}', 'API\Catagorys\ListADSInCategoryController@s
 Route::post('v1/category/ads', 'API\Catagorys\ListADSInCategoryController@create');
 Route::put('v1/category/ads/{cat}', 'API\Catagorys\ListADSInCategoryController@update');
 Route::delete('v1/category/ads/{cat}', 'API\Catagorys\ListADSInCategoryController@delete');
+
+Route::get('v1/category/video/list', 'API\Videos\ListVideoByCategoryController@index');
+Route::get('v1/category/video/list/{id}', 'API\Videos\ListVideoByCategoryController@show');
+Route::post('v1/category/video/list', 'API\Videos\ListVideoByCategoryController@create');
+Route::put('v1/category/video/list/{id}', 'API\Videos\ListVideoByCategoryController@update');
+Route::delete('v1/category/video/list/{id}', 'API\Videos\ListVideoByCategoryController@delete');
+
